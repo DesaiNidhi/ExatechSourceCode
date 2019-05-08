@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+android:orientation="vertical">
+    <View android:layout_width="match_parent" android:layout_height="0.7dp"
+          android:background="@android:color/black"></View>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:padding="@dimen/_10sdp"
+            android:orientation="vertical"
+    android:layout_marginTop="@dimen/_5sdp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="1"
+                  android:id="@+id/txtOrderCount"
+                  android:textColor="@android:color/black"
+                  android:textSize="@dimen/_14sdp"
+        />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="@string/orderToReview"
+                  android:textSize="@dimen/_14sdp"
+                  android:layout_toRightOf="@+id/txtOrderCount"
+                  android:layout_marginLeft="@dimen/_8sdp"/>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:weightSum="3"
+                      android:layout_alignParentRight="true"
+                      android:layout_alignParentEnd="true"
+                      android:id="@+id/linearMain">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:gravity="center">
+                <ImageView android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_25sdp"
+                           android:src="@drawable/img_condition_help"
+                           android:id="@+id/imgBulkConditnl"
+                           android:tint="@color/colorPrimary"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="@string/conditional"
+                          android:layout_gravity="center"
+                />
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:gravity="center"
+                          android:layout_marginLeft="@dimen/_5sdp">
+                <ImageView android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_25sdp"
+                           android:src="@drawable/img_bulk_approve"
+                           android:id="@+id/imgBulkApprove"
+                           android:tint="@color/colorPrimary"
+                />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="@string/accept"
+                          android:layout_gravity="center"
+                />
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:gravity="center"
+                          android:layout_marginLeft="@dimen/_5sdp">
+                <ImageView android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_25sdp"
+                           android:src="@drawable/img_bulk_cancel"
+                           android:id="@+id/imgBulkReject"
+                           android:tint="@color/colorPrimary"
+                />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="@string/reject"
+                          android:layout_gravity="center"
+                />
+            </LinearLayout>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/linearMain"
+                                                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                                                android:id="@+id/recyclerview"
+                                                android:layout_marginTop="@dimen/_10sdp"></android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</LinearLayout>

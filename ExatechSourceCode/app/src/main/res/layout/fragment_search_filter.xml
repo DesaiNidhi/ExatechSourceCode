@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_10sdp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical"
+    android:id="@+id/linearMain">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/customerTitle"
+                      android:text="Date"
+                      android:textSize="@dimen/_16sdp"
+                      android:textColor="@color/colorPrimary"
+                      android:layout_marginTop="@dimen/_5sdp"
+
+            />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/custDetailTitle"
+                      android:text="Range"
+                      android:textSize="@dimen/_16sdp"
+                      android:textColor="@android:color/black"
+                      android:layout_marginTop="@dimen/_5sdp"
+                      android:layout_marginLeft="@dimen/_5sdp"
+                      android:textStyle="bold|italic"
+
+            />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:weightSum="2"
+                      android:layout_marginTop="@dimen/_10sdp">
+            <android.support.design.widget.TextInputLayout android:layout_width="0dp"
+                                                           android:layout_height="wrap_content"
+                                                           android:layout_weight="1">
+                <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:hint="Start Date"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="0dp"
+                                                           android:layout_height="wrap_content"
+                                                           android:layout_weight="1">
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:hint="End Date"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/_20sdp"
+                  android:textSize="@dimen/_16sdp"
+                  android:textColor="@color/colorPrimary"
+                  android:text="More"
+        />
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                                                       android:layout_height="wrap_content">
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:hint="Order Id"
+            />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                                                       android:layout_height="wrap_content">
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:hint="Loan No"
+            />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                                                       android:layout_height="wrap_content">
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:hint="Borrower"
+            />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                                                       android:layout_height="wrap_content">
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:hint="Address"
+            />
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:orientation="horizontal"
+                  android:layout_alignParentRight="true"
+                  android:layout_below="@+id/linearMain"
+                  android:layout_marginTop="@dimen/_20sdp"
+
+    >
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Reset"
+        android:textSize="@dimen/_16sdp"
+        />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="Apply"
+                  android:textSize="@dimen/_16sdp"
+                  android:layout_marginRight="@dimen/_10sdp"
+                  android:layout_marginLeft="@dimen/_20sdp"
+                  android:textColor="@color/colorPrimary"
+        />
+
+    </LinearLayout>
+</RelativeLayout>

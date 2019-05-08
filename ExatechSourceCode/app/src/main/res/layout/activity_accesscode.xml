@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+android:id="@+id/relativeMain">
+    <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+                android:layout_below="@+id/toolbar"
+                android:fitsSystemWindows="true"
+                android:fillViewport="true"
+
+    >
+
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:id="@+id/linearMain"
+                            android:orientation="vertical"
+                            android:layout_below="@+id/toolbar"
+            >
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                             android:id="@+id/frame">
+                    <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/_160sdp"
+                               android:src="@drawable/profile_bg_shape"
+                               android:scaleType="fitXY"/>
+
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="@dimen/_120sdp" android:layout_height="@dimen/_120sdp"
+                                   android:layout_marginRight="@dimen/_15sdp"
+                                   android:layout_gravity="end"
+                                   android:background="@drawable/profile_circle"
+                                   android:layout_marginEnd="@dimen/_20sdp"
+                                   android:layout_marginTop="@dimen/_20sdp"
+                                   android:src="@drawable/profile_circle"
+                        />
+                        <com.mikhaellopez.circularimageview.CircularImageView android:layout_width="@dimen/_87sdp"
+                                                                              android:layout_height="@dimen/_90sdp"
+                                                                              android:layout_marginRight="@dimen/_36sdp"
+                                                                              android:layout_gravity="end"
+                                                                              android:layout_marginEnd="@dimen/_36sdp"
+                                                                              android:layout_marginTop="@dimen/_37sdp"
+                                                                              android:layout_marginBottom="@dimen/_43sdp"
+                                                                              android:src="@drawable/profile_placeholder"
+
+
+                        />
+
+                    </FrameLayout>
+                </FrameLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_below="@+id/frame"
+                          android:text="@string/enter_access_code"
+                          android:layout_gravity="center"
+                          android:textSize="@dimen/_14sdp"
+                          android:layout_marginTop="@dimen/_10sdp"
+                          android:textColor="@color/colorPrimary"
+                          android:id="@+id/txtEnter"
+                          android:layout_centerHorizontal="true"
+                />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_below="@+id/txtEnter"
+                              android:orientation="horizontal"
+                              android:layout_gravity="center"
+                              android:layout_marginTop="@dimen/_10sdp"
+                              android:layout_centerHorizontal="true"
+                              android:id="@+id/linearRadio">
+
+
+                    <RadioButton android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp"
+                                 android:background="@drawable/back_radio_btn"
+                                 android:button="@null"
+                                 style="@style/theme_radio_btn"
+                                 android:id="@+id/radioBtn1"
+                                 android:clickable="false"/>
+                    <RadioButton android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp"
+                                 android:background="@drawable/back_radio_btn"
+                                 android:button="@null"
+                                 style="@style/theme_radio_btn"
+                                 android:id="@+id/radioBtn2"
+                                 android:clickable="false"/>
+                    <RadioButton android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp"
+                                 android:background="@drawable/back_radio_btn"
+                                 android:button="@null"
+                                 style="@style/theme_radio_btn"
+                                 android:id="@+id/radioBtn3"
+                                 android:clickable="false"/>
+                    <RadioButton android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp"
+                                 android:background="@drawable/back_radio_btn"
+                                 android:button="@null"
+                                 style="@style/theme_radio_btn"
+                                 android:id="@+id/radioBtn4"
+                                 android:clickable="false"/>
+                    <RadioButton android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp"
+                                 android:background="@drawable/back_radio_btn"
+                                 android:button="@null"
+                                 style="@style/theme_radio_btn"
+                                 android:id="@+id/radioBtn5"
+                                 android:clickable="false"/>
+                    <RadioButton android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp"
+                                 android:background="@drawable/back_radio_btn"
+                                 android:button="@null"
+                                 style="@style/theme_radio_btn"
+                                 android:id="@+id/radioBtn6"
+                                 android:clickable="false"/>
+
+
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_below="@+id/linearRadio"
+                          android:layout_centerHorizontal="true"
+                          android:text="@string/forgot_access_code"
+                          android:layout_gravity="center"
+                          android:textSize="@dimen/_14sdp"
+                          android:layout_marginTop="@dimen/_20sdp"
+                          android:layout_marginBottom="@dimen/_10sdp"
+                          android:textColor="@color/colorPrimary"
+                          android:id="@+id/txtForgot"
+                          android:visibility="visible"
+
+                />
+
+                <include layout="@layout/access_code_keyboard"
+
+                ></include>
+            </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

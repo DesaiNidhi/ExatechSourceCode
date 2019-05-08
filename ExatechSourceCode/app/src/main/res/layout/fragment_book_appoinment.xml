@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        android:id="@+id/linearMain">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:textColor="@color/colorPrimary"
+              android:textSize="@dimen/_14sdp"
+              android:layout_marginTop="@dimen/_10sdp"
+              android:text="@string/appoinmentDte"/>
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:background="@drawable/back_product_detail"
+              android:layout_marginTop="@dimen/_10sdp"
+              android:minLines="2"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="@string/comments"
+              android:layout_marginTop="@dimen/_10sdp"
+              android:textColor="@color/colorPrimary"
+              android:textSize="@dimen/_14sdp"/>
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:background="@drawable/back_product_detail"
+              android:layout_marginTop="@dimen/_10sdp"
+              android:minLines="4"/>
+    />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:gravity="end"
+                  android:layout_marginTop="@dimen/_20sdp">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@android:color/transparent"
+                android:text="@string/cancel"/>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@android:color/transparent"
+                android:text="@string/submit"
+                android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+</LinearLayout>
+

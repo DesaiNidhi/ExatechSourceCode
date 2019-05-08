@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+android:background="@android:color/white"
+android:padding="@dimen/_10sdp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:padding="@dimen/_5sdp"
+                  android:orientation="vertical">
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content"
+       android:src="@drawable/img_exatexhlogo"
+        />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/loginLable"
+                  android:textSize="@dimen/_12sdp"
+        />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="@string/login"
+                  style="@style/txtLogin"
+                  android:layout_marginTop="@dimen/_10sdp"
+        />
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+              android:layout_marginTop="@dimen/_5sdp"
+              android:background="@color/colorPrimary"
+              android:layout_marginEnd="@dimen/_20sdp"
+              android:layout_marginRight="@dimen/_20sdp"></View>
+
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_marginTop="@dimen/_30sdp"
+android:background="@drawable/back_product_detail">
+    <com.rilixtech.CountryCodePicker android:layout_width="wrap_content"
+                                     android:layout_height="match_parent"
+                                     android:gravity="center"
+                                     android:paddingLeft="@dimen/_3sdp"
+                                     app:ccp_countryPreference="US"
+                                     app:ccp_defaultNameCode="US"
+                                     app:ccp_hideNameCode="true"></com.rilixtech.CountryCodePicker>
+    <com.bachors.prefixinput.EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                                      android:digits="0123456789-"
+                                      android:id="@+id/edtPhoneNumber"
+                                      android:inputType="number"
+                                      android:background="@android:color/transparent"
+                                      android:minLines="2"
+
+    />
+</LinearLayout>
+
+
+
+        <Button android:layout_width="@dimen/_120sdp" android:layout_height="wrap_content"
+                android:background="@drawable/back_square_btn"
+                android:text="NEXT"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:padding="@dimen/_10sdp"
+                android:id="@+id/btnNxt"
+                android:textSize="@dimen/_14sdp"
+        />
+    </LinearLayout>
+
+</RelativeLayout>

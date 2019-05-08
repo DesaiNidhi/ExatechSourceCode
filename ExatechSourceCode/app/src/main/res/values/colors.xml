@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#02B8B3</color>
+    <color name="colorPrimaryDark">@color/colorPrimary</color>
+    <color name="colorAccent">@color/colorPrimary</color>
+    <!--Login color code-->
+    <color name="light_blue">#02A0FB</color>
+    <color name="light_grey">#E6E6E6</color>
+    <color name="grey">#7c7c7c</color>
+    <color name="sea_green">@color/colorPrimary</color>
+    <color name="colorCameraIcon">#002A49</color>
+    <color name="messageBack">#F9F9F9</color>
+</resources>

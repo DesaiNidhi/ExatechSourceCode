@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:padding="@dimen/_5sdp"
+                  android:layout_margin="@dimen/_5sdp"
+                  android:background="@drawable/back_message_chat">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:layout_weight="1.2"
+                      android:text="Marty Frenzy"
+                      android:textColor="@android:color/black"
+                      android:textSize="@dimen/_14sdp"
+            />
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:layout_weight="0.8"
+                      android:text="19 Dec 2018 14:03:44"
+                      android:gravity="right"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+              android:background="@color/grey"
+              android:layout_marginTop="@dimen/_5sdp"></View>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="Test"
+                  android:layout_marginTop="@dimen/_5sdp"
+                  android:textColor="@android:color/black"/>
+    </LinearLayout>
+</RelativeLayout>

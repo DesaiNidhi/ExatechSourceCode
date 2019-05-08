@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="@dimen/_8sdp">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/productTitle"
+                  android:text="@string/product"
+                  android:textSize="@dimen/_16sdp"
+                  android:textColor="@color/colorPrimary"
+
+        />
+        <TextView android:layout_width="wrap_content" android:layout_height="match_parent"
+                  android:id="@+id/DetailTitle"
+                  android:text="@string/detail"
+                  android:textSize="@dimen/_16sdp"
+                  android:textColor="@android:color/black"
+                  android:layout_marginLeft="@dimen/_10sdp"
+                  android:textStyle="bold|italic"
+
+        />
+    </LinearLayout>
+    <android.support.v7.widget.CardView android:layout_height="wrap_content"
+                                        android:layout_width="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:background="@drawable/back_product_detail"
+                      android:padding="@dimen/_8sdp"
+                      android:id="@+id/productDetail"
+        >
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:weightSum="3">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:text="@string/orderID"
+                          android:layout_weight="0.8"
+                          style="@style/theme_product_detail_title"
+
+                />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text=":"
+                          android:textColor="@android:color/black"
+                          android:layout_marginLeft="@dimen/_5sdp"
+
+                />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:id="@+id/orderId"
+                          android:text="2233e43" android:layout_marginLeft="@dimen/_5sdp"
+                          android:layout_weight="1.5"
+                          style="@style/theme_product_detail_value"></TextView>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:layout_weight="0.7"
+                          android:text="cc5455" android:id="@+id/orderno"
+                          android:layout_marginRight="@dimen/_5sdp"
+                          android:layout_toRightOf="@id/orderId"
+                          android:layout_gravity="end"
+                          android:gravity="end"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@color/light_grey"
+                  android:layout_marginTop="@dimen/_3sdp"></View>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:weightSum="3"
+                          android:layout_marginTop="@dimen/_5sdp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:text="@string/product"
+                          android:layout_weight="0.8"
+                          style="@style/theme_product_detail_title"
+
+                />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text=":"
+                          android:textColor="@android:color/black"
+                          android:layout_marginLeft="@dimen/_5sdp"
+
+                />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:id="@+id/product"
+                          android:text="2233e43" android:layout_marginLeft="@dimen/_5sdp"
+                          android:layout_weight="1.8"
+                          style="@style/theme_product_detail_value"></TextView>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:weightSum="3">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:text="@string/borrower"
+                          android:layout_weight="0.8"
+                          style="@style/theme_product_detail_title"
+
+                />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text=":"
+                          android:textColor="@android:color/black"
+                          android:layout_marginLeft="@dimen/_5sdp"
+
+                />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:id="@+id/borrowerName"
+                          android:text="2233e43" android:layout_marginLeft="@dimen/_5sdp"
+                          android:layout_weight="1.8"
+                          style="@style/theme_product_detail_value"></TextView>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:weightSum="3">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:text="@string/assignDate"
+                          android:layout_weight="0.8"
+                          style="@style/theme_product_detail_title"
+
+                />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text=":"
+                          android:textColor="@android:color/black"
+                          android:layout_marginLeft="@dimen/_5sdp"
+
+                />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:id="@+id/assignDate"
+                          android:text="2233e43" android:layout_marginLeft="@dimen/_5sdp"
+                          android:layout_weight="1.8"
+                          style="@style/theme_product_detail_value"></TextView>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:weightSum="3">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:text="@string/dueDate"
+                          android:layout_weight="0.8"
+                          style="@style/theme_product_detail_title"
+
+                />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text=":"
+                          android:textColor="@android:color/black"
+                          android:layout_marginLeft="@dimen/_5sdp"
+
+                />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:id="@+id/dueDte"
+                          android:text="2233e43" android:layout_marginLeft="@dimen/_5sdp"
+                          android:layout_weight="1.8"
+                          style="@style/theme_product_detail_value"></TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/customerTitle"
+                  android:text="@string/customer"
+                  android:textSize="@dimen/_16sdp"
+                  android:textColor="@color/colorPrimary"
+                  android:layout_marginTop="@dimen/_5sdp"
+
+        />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/custDetailTitle"
+                  android:text="@string/detail"
+                  android:textSize="@dimen/_16sdp"
+                  android:textColor="@android:color/black"
+                  android:layout_marginTop="@dimen/_5sdp"
+                  android:layout_marginLeft="@dimen/_5sdp"
+                  android:textStyle="bold|italic"
+
+        />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:background="@drawable/back_product_detail"
+                      android:padding="@dimen/_8sdp"
+                      android:layout_marginTop="@dimen/_5sdp"
+        >
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="Select Business service"
+            />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="245345 54545 "
+                      android:layout_marginTop="@dimen/_5sdp"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

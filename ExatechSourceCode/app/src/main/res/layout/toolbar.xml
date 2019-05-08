@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:id="@+id/toolbar"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="?attr/actionBarSize"
+                                   android:background="@color/sea_green"
+                                   app:popupTheme="@style/AppTheme.PopupOverlay"
+>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:src="@drawable/img_filter"
+                   android:visibility="gone"
+                   android:id="@+id/imgFilter"
+                   android:layout_centerVertical="true"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:src="@drawable/img_back_arrrow"
+                   android:visibility="gone"
+                   android:id="@+id/imgBack"
+                   android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imgFilter"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/txtTitle"
+                  android:textColor="@android:color/black"
+                  android:textSize="@dimen/_16sdp"
+                  android:layout_toRightOf="@id/imgBack"
+                  android:visibility="gone"
+                  android:layout_marginLeft="@dimen/_20sdp"
+                  fontPath="assets/RobotoCondensed-Bold"
+
+        />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:src="@drawable/img_search"
+                   android:visibility="gone"
+                   android:layout_toRightOf="@+id/txtTitle"
+                   android:layout_marginLeft="@dimen/_20sdp"
+                   android:layout_centerVertical="true"
+                   android:id="@+id/imgSearch"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:src="@drawable/img_inspections"
+                   android:visibility="gone"
+                   android:id="@+id/imgInspectn"
+                   android:layout_toLeftOf="@+id/imgDoc"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="@dimen/_20sdp"
+
+        />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:src="@drawable/img_documents"
+                   android:visibility="gone"
+                   android:id="@+id/imgDoc"
+                   android:layout_toLeftOf="@+id/imgMessageDetail"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="@dimen/_20sdp"
+
+        />
+
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:src="@drawable/img_message"
+                   android:tint="@color/colorPrimary"
+                   android:visibility="gone"
+                   android:id="@+id/imgMessageDetail"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentEnd="true"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="@dimen/_8sdp"
+
+
+        />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:src="@drawable/img_message"
+                   android:tint="@color/colorCameraIcon"
+                   android:visibility="gone"
+                   android:id="@+id/imgMessage"
+                   android:layout_toLeftOf="@+id/imgDrawer"
+                   android:layout_centerVertical="true"
+
+
+        />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="4"
+                  android:textColor="@android:color/black"
+                  android:layout_marginRight="@dimen/_20sdp"
+                  android:textSize="@dimen/_12sdp"
+                  android:layout_toRightOf="@+id/imgMessage"
+                  android:gravity="top|center"
+                  android:background="@drawable/back_circle_message"
+                  android:visibility="gone"
+                  android:id="@+id/txtMsgCount"
+
+        />
+
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:src="@drawable/ic_drawer"
+                   android:layout_alignParentEnd="true"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="@dimen/_8sdp"
+                   android:id="@+id/imgDrawer"
+                   android:visibility="gone"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="@dimen/_15sdp"
+
+        />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>
